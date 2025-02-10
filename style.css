@@ -1,0 +1,535 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;500;600;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Estilos del header */
+header {
+    width: 100%;
+    height: 80px;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #ffffff;
+    width: 150px;
+}
+
+.bars {
+    display: none;
+}
+
+.nav-bar ul {
+    display: flex;
+}
+
+.nav-bar ul li a {
+    text-decoration: none;
+    display: block;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 15px;
+    border-radius: 15px;
+    transition: 0.5s;
+    margin: 0 5px;
+}
+
+.nav-bar ul li a.active {
+    color: #ffffff;
+    background-color: #2C3E50;
+}
+
+.nav-bar ul li a:hover {
+    color: #ffffff;
+    background-color: #C1000F;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    min-height: 70vh;
+    padding: 50px 0 0 0;
+}
+
+.header-content{
+    display: flex;
+    flex: 1;
+}
+
+.header-txt{
+    flex-basis: 50%;
+}
+
+.header-txt span{
+    font-size: 30px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.header-txt h1{
+    font-size: 100px;
+    color: #7a0000;
+    line-height: 1;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+.btn-1{
+    display: inline-block;
+    padding: 13px 35px;
+    background: linear-gradient(
+        90deg,
+        rgb(167, 0, 0) 0%,
+        rgb(85, 0, 0) 100%
+    );
+    color: #f7f7f7;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-radius: 10px;
+}
+
+.about{
+    padding: 0 0 100px 0;
+    display: flex;
+    align-items: center;
+}
+
+.about-img{
+    flex-basis: 40%;
+}
+
+.about-img img{
+    width: 350px;
+    border-radius: 15px;
+    border: 10px solid #850000;    
+}
+
+.about-txt{
+    flex-basis: 60%;
+}
+
+h2{
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.about-txt p{
+    color: #252525;
+    font: 17px;
+    margin-bottom: 50px;
+}
+
+.butons a{
+    margin-right: 15px;
+}
+
+
+
+.chart-container {
+    width: 50%;
+    margin: auto;
+}
+canvas {
+    width: 100% !important;
+    height: auto !important;
+}
+
+
+
+.general{
+    padding: 100px 0;
+    display: flex;
+}
+
+.general-1{
+    width: 70%;
+    display: flex;
+}
+
+.general-card{
+    padding: 40px;
+    text-align: center;
+    margin:0 10px;
+    border-radius: 25px;
+    box-shadow: 0 0 15px rgba(0, 0,0,0.2);
+}
+
+.general-card img{
+    width: 30px;
+    margin-bottom: 25px;
+}
+
+.general-card h3{
+    font-size: 18px;
+    color: #121140;
+    margin-bottom: 15px;
+}
+
+.general-card p{
+    font-size: 16px;
+    color: #656875;
+}
+
+
+.portafolio{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.portafolio-content{
+    margin-top: 70px;
+}
+
+.portafolio-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.portafolio-txt{
+    flex-basis: 50%;
+    text-align: left;
+}
+
+.portafolio-txt span{
+    font-size: 18px;
+    font-weight: 600;
+    display: block;
+    color: #6d0000;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.portafolio-txt h3{
+    color: #000000;
+    font-size: 35px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+
+.portafolio-txt p{
+    font-size: 17px;
+    color: #242424;
+    margin-bottom: 25px;
+}
+
+.portafolio-img{
+    flex-basis: 50%;
+    text-align: center;
+}
+
+.skills{
+    padding: 50px 0 100px 0;
+    text-align: center;
+}
+
+.skills-content{
+    margin-top: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 100px;
+    justify-content: center;
+}
+
+.skills-content img{
+    width: 70px;
+}
+
+.footer{
+    padding-bottom: 50px;
+}
+
+.links{
+    display: flex;
+    justify-content: space-between;
+}
+
+.link{
+    width: 25%;
+}
+
+.link h3{
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.link p{
+    color: #941b00;
+    font-size: 14px;
+    margin: 0 50px 15px 0;
+}
+
+.link ul li a{
+    display: inline-block;
+    font-size: 16px;
+    color: #530000;
+    margin-bottom: 10px;
+}
+
+.socials-2 img{
+    width: 20px;
+    height: 20px;
+}
+
+.link form{
+    display: flex;
+    flex-direction: column;
+}
+
+.inp{
+    margin-bottom: 15px;
+    padding: 8px 15px;
+    border-radius: 10px;
+    outline: none;
+}
+
+.btn-4{
+    padding: 8px 15px;
+    border-radius: 10px;
+    background-color: #bd0000;
+    border: 0;
+    color: #dfdde0;
+}
+
+/* Formulario general (excluyendo el formulario del footer) */
+.form-general {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, .5);
+    border-radius: 25px;
+    background-color: #eeeeee;
+    margin-bottom: 25px;
+    display: flex;
+    align-items: center;
+    margin: auto;
+    margin-bottom: 25px;
+}
+
+h2{
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+    color: #2e2e2e;
+    margin-bottom: 25px;
+}
+
+label, p{
+    font-size: 17px;
+    color: #575757;
+    margin-bottom: 10px;
+}
+
+.input-container{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px;
+}
+
+input{
+    padding: 17px 11px;
+    border: 1px solid #4b0000;
+    border-radius: 25px;
+    background-color: #fafafc;
+    outline: none;
+    color: #000000;
+    font-size: 17px;
+    width: 100%;
+}
+
+.btn-1{
+    background-color: #00adef;
+    font-size: 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.btn-1:hover{
+    background-color: #04b8ff;
+}
+
+.remember{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+
+a{
+    color: #002fff;
+    text-decoration:underline;
+}
+
+@media(max-width:991px){
+    header {
+        padding: 0px 30px;
+    }
+
+    .bars {
+        display: block;
+        cursor: pointer;
+    }
+
+    .bars .line {
+        width: 30px;
+        height: 3px;
+        background-color: #8a0000;
+        margin: 6px 0px;
+    }
+
+    .nav-bar {
+        height: 0px;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: #0f30632c;
+        backdrop-filter: blur(20px);
+        transition: 0.5s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active {
+        height: 450px;
+    }
+
+    .nav-bar ul {
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul {
+        opacity: 1;
+    }
+
+    .nav-bar ul li a {
+        margin-bottom: 20px;
+    }
+    .header{
+        min-height: 0vh;
+        padding: 100px 30px 30px 30px;
+    }
+
+    .header-content{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .header-txt h1{
+        font-size: 70px;
+    }
+
+    .about{
+        padding: 30px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .about-img{
+        text-align: center;
+    }
+    
+    .about-img img{
+        width: 250px;
+        margin-bottom: 15px;
+    }
+
+    .butons a{
+        margin: 0 0 10px 0;
+    }
+
+    .portafolio{
+        padding: 30px;
+    }
+
+    .portafolio-content{
+        margin-top: 30px;
+    }
+
+    .portafolio-1{
+        flex-direction: column;
+        margin-bottom: 30px;
+    }
+
+    .portafolio-txt{
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .portafolio-img{
+        order: 2;
+    }
+
+    .portafolio-img img{
+        width: 250px;
+    }
+
+    .skills{
+        padding: 0 30px 30px 30px;
+    }
+
+    .skills-content{
+        margin-top: 0;
+        grid-template-columns: repeat(2,1fr);
+        gap: 40px;
+        padding: 0 100px;
+    }
+
+    .footer{
+        padding: 30px;
+    }
+
+    .links{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .link{
+        width: 70%;
+    }
+
+    .link p{
+        margin: 0 0 25px 0;
+    }
+
+    .socials-2{
+        margin-bottom: 15px;
+    }
+}

